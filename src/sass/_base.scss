@@ -24,8 +24,9 @@ time, mark, audio, video {
 *,html,body {
   font-size: 100%;
   line-height: 1.4;
-  font-family: $font-family2;
-  color: $font-color1;
+  font-weight: 400;
+  font-family: $font-family;
+  color: #6b6b6b;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -55,11 +56,11 @@ h6 {
   font-weight: bolder;
 }
 h1,h2,h3,h4,h5,h6 {
-  font-family: $font-family2;
+  font-family: $font-family;
 }
 p {
   font-size: 1em;
-  font-family: $font-family1;
+  font-family: $font-family;
 }
 li {
   list-style-type: none;
@@ -110,5 +111,25 @@ button:focus{
   }
   &:after {
     clear: both;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 150%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #df2e73;
+  border-radius: 30px;
+  transition: all .4s ease-in-out;
+  margin-top: 30px;
+  cursor: pointer;
+  &:hover {
+    background: $theme-color;
   }
 }
