@@ -563,8 +563,8 @@ button:focus {
   color: #fff; }
 
 .hero-home__heading {
-  font-size: 60px;
-  line-height: 50px;
+  font-size: 52px;
+  line-height: 52px;
   color: #164167; }
 
 .hero__text {
@@ -708,6 +708,8 @@ button:focus {
   background-color: #164167;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 80px; }
+  .contact .text {
+    color: #fff; }
 
 .contact__map {
   padding: 0 20px; }
