@@ -5,7 +5,7 @@
 .hero-wrapper {
 	background-color: $theme-color;
 	width: 100%;
-  min-height: 850px;
+  min-height: 400px;
   padding: 30px 0 0;
   color: #fff;
   position: relative;
@@ -17,6 +17,9 @@
   -o-background-size: cover;
   background-size: cover;
   background-image: url(../../assets/header-home.png);
+}
+.hero-home-wrapper {
+	min-height: 850px;
 }
 
 // =========================
@@ -38,7 +41,8 @@
 	@extend %flex-between;
 }
 .menu__item {
-	padding: 23px 15px;
+	margin: 23px 15px;
+	padding-bottom: 6px;
 	font-size: 17px;
 	color: #fff;
 	text-transform: uppercase;
@@ -48,6 +52,9 @@
 	&:hover {
 		opacity: 0.5;
 	}
+}
+.active {
+	border-bottom: 3px solid $accent-color;
 }
 
 .hero {
@@ -63,13 +70,16 @@
 	        transform: translate(-50%, -50%);
 }
 .hero__heading {
-	font-size: 100px;
+	font-size: 40px;
 	font-weight: 700;
 	line-height: 150%;
 	color: #fff;
 }
+.hero-home__heading {
+	font-size: 100px;
+}
 .hero__text {
-	font-size: 24px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	font-weight: 400;
 	line-height: 150%;
@@ -78,6 +88,9 @@
 		font-weight: 700;
 		color: #fff;
 	}
+}
+.hero-home__text {
+	font-size: 24px;
 }
 
 .first-block {
@@ -178,10 +191,68 @@
 .location__content {
 	padding: 80px 0;
 }
-.reaching-instruction {
-	h2 {
-		color: $accent-color;
+.contact {
+	padding: 30px 0;
+	border: 1px solid rgba(0,0,0,.12);
+	background-color: #fff;
+	box-shadow: 0 0 40px 0 rgba(0,0,0,.12);
+	margin-bottom: 80px;
+}
+.contact__map {
+	padding: 0 20px;
+}
+.activity {
+	padding: 40px 0 80px 0;
+}
+.padding {
+	padding: 20px;
+}
+.activity__list {
+	margin-top: 30px;
+	@extend %flex-between;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.activity__item {
+	width: 360px;
+	height: 360px;
+	position: relative;
+	&:hover .activity__name {
+		opacity: 1;
 	}
+}
+.activity__img {
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.activity__name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	border-radius: 8px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	.heading2 {
+		font-size: 30px;
+		color: #fff;
+	}
+}
+.apply {
+	padding: 80px 0;
 }
 .footer {
 	background: #f9fafb;
