@@ -252,7 +252,7 @@
 	padding: 40px 0 80px 0;
 }
 .padding {
-	padding: 0 30px;
+	padding: 30px;
 }
 .activity__list {
 	margin-top: 30px;
@@ -261,12 +261,9 @@
 	flex-wrap: wrap;
 }
 .activity__item {
-	width: 360px;
-	height: 360px;
+	width: 350px;
+	height: 280px;
 	position: relative;
-	&:hover .activity__name {
-		opacity: 1;
-	}
 }
 .activity__img {
 	height: 100%;
@@ -291,11 +288,11 @@
 	right: 0;
 	left: 0;
 	background: rgba(0, 0, 0, 0.6);
-	opacity: 0;
 	transition: all 0.3s ease-in-out;
 	.heading2 {
-		font-size: 30px;
-		color: $font-color-hero;
+		font-size: 24px;
+		letter-spacing: 0.07em;
+		color: #fff;
 	}
 }
 .apply {
