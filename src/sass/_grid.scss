@@ -76,7 +76,7 @@ $col-width: 100% / $columns;
 }
 @media all and (min-width: 1200px) {
 	.container {
-		max-width: 1200px;
+		max-width: 1368px;
 	}
 	@for $i from $columns through 1 {
 		.col-xl-#{ $i } {
