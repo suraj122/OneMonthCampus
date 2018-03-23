@@ -133,7 +133,7 @@ button:focus {
   margin-top: 30px;
   cursor: pointer; }
   .btn:hover {
-    background: #164167; }
+    background: #468847; }
 
 .navigation-bar, .menu, .first-block__content, .activity__list, .footer .footer__content .navigation-bar, .social-share {
   display: -webkit-box;
@@ -497,27 +497,25 @@ button:focus {
   .col-xl-offset-1 {
     margin-left: 8.3333333333%; } }
 .hero-wrapper {
-  background-color: #164167;
+  background-color: #468847;
   width: 100%;
   min-height: 400px;
   padding: 30px 0 0;
-  color: #fff;
+  color: #164167;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-image: url(../../assets/header-home.png); }
+  background-size: contain; }
 
 .hero-home-wrapper {
-  min-height: 850px; }
+  background-color: white; }
 
 .logo {
   font-size: 40px;
-  color: #fff;
+  color: #164167;
   font-weight: 700;
   transition: all 0.3s ease-in-out; }
   .logo:hover {
@@ -527,7 +525,7 @@ button:focus {
   margin: 23px 15px;
   padding-bottom: 6px;
   font-size: 17px;
-  color: #fff;
+  color: #164167;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
@@ -539,37 +537,33 @@ button:focus {
   border-bottom: 3px solid #df2e73; }
 
 .hero {
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  padding: 0 130px;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  width: 100%; }
+
+.hero-main-text {
+  padding: 100px 130px 60px 130px; }
 
 .hero__heading {
   font-size: 40px;
   font-weight: 700;
   line-height: 150%;
-  color: #fff; }
+  color: #164167; }
 
 .hero-home__heading {
-  font-size: 100px; }
+  font-size: 60px;
+  line-height: 50px; }
 
 .hero__text {
   font-size: 18px;
   letter-spacing: 1px;
   font-weight: 400;
   line-height: 150%;
-  color: #fff; }
+  color: #164167; }
   .hero__text strong {
     font-weight: 700;
-    color: #fff; }
+    color: #164167; }
 
 .hero-home__text {
+  margin-top: 35px;
   font-size: 24px; }
 
 .first-block {
@@ -580,12 +574,30 @@ button:focus {
     line-height: 130%;
     color: #df2e73; }
 
+.bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-image: url("../../Assets/header.png"); }
+
+.green-bg {
+  background: #468847; }
+
 .custom {
   position: relative; }
 
 .amplitude-white {
   position: absolute;
   bottom: 0;
+  width: 100%; }
+
+.amplitude-green {
+  position: absolute;
+  top: 0;
   width: 100%; }
 
 .heading {
@@ -602,16 +614,20 @@ button:focus {
   color: #df2e73;
   margin-bottom: 20px; }
 
-.second-block {
-  padding: 140px 0; }
+.first-block__content {
+  padding: 50px 0; }
 
-.second-block__content {
-  padding-top: 140px; }
-  .second-block__content p {
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 155%;
-    color: #6b6b6b; }
+.primary {
+  padding: 100px; }
+
+.second-block {
+  padding-bottom: 60px; }
+
+.second-block__content p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 155%;
+  color: #6b6b6b; }
 
 .block {
   padding: 0 40px; }
@@ -664,7 +680,7 @@ button:focus {
 .contact {
   padding: 30px 0;
   border: 1px solid rgba(0, 0, 0, 0.12);
-  background-color: #fff;
+  background-color: #164167;
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
   margin-bottom: 80px; }
 
@@ -675,7 +691,7 @@ button:focus {
   padding: 40px 0 80px 0; }
 
 .padding {
-  padding: 20px; }
+  padding: 0 30px; }
 
 .activity__list {
   margin-top: 30px;
@@ -716,7 +732,7 @@ button:focus {
   transition: all 0.3s ease-in-out; }
   .activity__name .heading2 {
     font-size: 30px;
-    color: #fff; }
+    color: #164167; }
 
 .apply {
   padding: 80px 0; }

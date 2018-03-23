@@ -7,19 +7,18 @@
 	width: 100%;
   min-height: 400px;
   padding: 30px 0 0;
-  color: #fff;
+  color: $font-color-hero;
   position: relative;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-position: bottom;
+  // background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-image: url(../../assets/header-home.png);
+  background-size: contain;
 }
 .hero-home-wrapper {
-	min-height: 850px;
+	background-color: white;
 }
 
 // =========================
@@ -30,7 +29,7 @@
 }
 .logo {
 	font-size: 40px;
-	color: #fff;
+	color: $font-color-hero;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
 	&:hover {
@@ -44,7 +43,7 @@
 	margin: 23px 15px;
 	padding-bottom: 6px;
 	font-size: 17px;
-	color: #fff;
+	color: $font-color-hero;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -58,38 +57,35 @@
 }
 
 .hero {
-	position: absolute;
 	width: 100%;
-	left: 50%;
-	top: 50%;
-	padding: 0 130px;
-	-webkit-transform: translate(-50%, -50%);
-	   -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	     -o-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
+	// padding: 0 130px;
+}
+.hero-main-text {
+	padding: 100px 130px 60px 130px;
 }
 .hero__heading {
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 150%;
-	color: #fff;
+	color: $font-color-hero;
 }
 .hero-home__heading {
-	font-size: 100px;
+	font-size: 60px;
+	line-height: 50px;
 }
 .hero__text {
 	font-size: 18px;
 	letter-spacing: 1px;
 	font-weight: 400;
 	line-height: 150%;
-	color: #fff;
+	color: $font-color-hero;
 	strong {
 		font-weight: 700;
-		color: #fff;
+		color: $font-color-hero;
 	}
 }
 .hero-home__text {
+	margin-top: 35px;
 	font-size: 24px;
 }
 
@@ -102,12 +98,31 @@
     color: $accent-color;
 	}
 }
+.bg {
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-image: url('../../Assets/header.png');
+}
+.green-bg {
+	background: $theme-color;
+}
 .custom {
 	position: relative;
 }
 .amplitude-white {
 	position: absolute;
 	bottom: 0;
+	width: 100%;
+}
+
+.amplitude-green {
+	position: absolute;
+	top: 0;
 	width: 100%;
 }
 .heading {
@@ -126,13 +141,15 @@
 }
 .first-block__content {
 	@extend %flex-between;
+	padding: 50px 0;
 }
-
+.primary {
+	padding: 100px;
+}
 .second-block {
-	padding: 140px 0;
+	padding-bottom: 60px;
 }
 .second-block__content {
-	padding-top: 140px;
 	p {
 		font-size: 17px;
     font-weight: 400;
@@ -194,7 +211,7 @@
 .contact {
 	padding: 30px 0;
 	border: 1px solid rgba(0,0,0,.12);
-	background-color: #fff;
+	background-color: $font-color-hero;
 	box-shadow: 0 0 40px 0 rgba(0,0,0,.12);
 	margin-bottom: 80px;
 }
@@ -205,7 +222,7 @@
 	padding: 40px 0 80px 0;
 }
 .padding {
-	padding: 20px;
+	padding: 0 30px;
 }
 .activity__list {
 	margin-top: 30px;
@@ -248,7 +265,7 @@
 	transition: all 0.3s ease-in-out;
 	.heading2 {
 		font-size: 30px;
-		color: #fff;
+		color: $font-color-hero;
 	}
 }
 .apply {
@@ -266,14 +283,14 @@
 			justify-content: center;
 		}
 		.logo {
-			color: $theme-color;
+			color: $font-color-hero;
 			font-size: 24px;
 		}
 		.menu {
 			margin-left: 60px;
 		}
 		.menu__item {
-			color: $theme-color;
+			color: $font-color-hero;
 			font-size: 16px;
 		}
 	}
