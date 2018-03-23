@@ -7,7 +7,7 @@
 	width: 100%;
   min-height: 400px;
   padding: 30px 0 0;
-  color: $font-color-hero;
+  color: #fff;
   position: relative;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -19,6 +19,7 @@
 }
 .hero-home-wrapper {
 	background-color: white;
+	color: $font-color-hero;
 }
 
 // =========================
@@ -29,21 +30,24 @@
 }
 .logo {
 	font-size: 40px;
-	color: $font-color-hero;
+	color: #fff;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
 	&:hover {
 		opacity: 0.5;
 	}
 }
+.home-logo {
+	color: $font-color-hero;
+}
 .menu {
 	@extend %flex-between;
 }
 .menu__item {
-	margin: 23px 15px;
+	margin: 0px 15px;
 	padding-bottom: 6px;
 	font-size: 17px;
-	color: $font-color-hero;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -52,26 +56,36 @@
 		opacity: 0.5;
 	}
 }
+.home-menu__item {
+	color: $font-color-hero;
+}
 .active {
 	border-bottom: 3px solid $accent-color;
 }
 
 .hero {
 	width: 100%;
-	// padding: 0 130px;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	     -o-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 .hero-main-text {
-	padding: 100px 130px 60px 130px;
+	padding: 70px 130px 0px 130px;
 }
 .hero__heading {
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: 700;
 	line-height: 150%;
-	color: $font-color-hero;
+	color: #fff;
 }
 .hero-home__heading {
 	font-size: 60px;
 	line-height: 50px;
+	color: $font-color-hero;
 }
 .hero__text {
 	font-size: 18px;
@@ -88,14 +102,27 @@
 	margin-top: 35px;
 	font-size: 24px;
 }
+.event {
+	@extend %flex-between;
+	justify-content: center;
+	padding: 30px 0;
+	p {
+		font-size: 24px;
+		color: $accent-color;
+		margin: 0 40px;
 
+	}
+}
 .first-block {
 	background: #fff;
 	p {
-		font-size: 20px;
+		font-size: 24px;
     font-weight: 700;
     line-height: 130%;
-    color: $accent-color;
+    color: $font-color;
+    span {
+    	color: $accent-color;
+    }
 	}
 }
 .bg {
@@ -272,25 +299,30 @@
 	padding: 80px 0;
 }
 .footer {
-	background: #f9fafb;
-	.amplitude-white {
-		top: 0;
-	}
+	position: relative;
 	.footer__content {
-		padding: 100px 0 50px 0;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		   -moz-transform: translate(-50%, -50%);
+		    -ms-transform: translate(-50%, -50%);
+		     -o-transform: translate(-50%, -50%);
+		        transform: translate(-50%, -50%);
 		.navigation-bar {
 			@extend %flex-between;
 			justify-content: center;
 		}
 		.logo {
-			color: $font-color-hero;
+			color: #fff;
 			font-size: 24px;
 		}
 		.menu {
 			margin-left: 60px;
 		}
 		.menu__item {
-			color: $font-color-hero;
+			color: #fff;
 			font-size: 16px;
 		}
 	}
