@@ -1,4 +1,4 @@
-.navigation-bar, .menu, .event, .first-block__content, .activity__list, .footer .footer__content .navigation-bar, .social-share {
+.navigation-bar, .menu, .event, .first-block__content, .hero__nav-menu, .activity__list, .footer .footer__content .navigation-bar, .social-share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +38,8 @@ time, mark, audio, video {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  *.in-transition, html.in-transition, body.in-transition {
+    transition: transform 900ms ease; }
 
 h1 {
   font-size: 2em;
@@ -135,7 +137,7 @@ button:focus {
   .btn:hover {
     background: #468847; }
 
-.navigation-bar, .menu, .event, .first-block__content, .activity__list, .footer .footer__content .navigation-bar, .social-share {
+.navigation-bar, .menu, .event, .first-block__content, .hero__nav-menu, .activity__list, .footer .footer__content .navigation-bar, .social-share {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -683,21 +685,32 @@ button:focus {
     margin-right: 10px;
     font-size: 20px; }
 
-.timeline {
-  padding: 130px 0; }
+.hero__nav-menu {
+  justify-content: center;
+  margin-top: 20px; }
+  .hero__nav-menu li {
+    margin: 0 20px; }
+    .hero__nav-menu li a {
+      color: #164167;
+      font-size: 20px;
+      font-weight: 700;
+      transition: all 200ms ease-in-out; }
+      .hero__nav-menu li a:hover {
+        opacity: 0.5; }
 
-.timeline__content {
-  padding-top: 80px; }
+.timeline {
+  padding: 80px 0;
+  background: #164167; }
 
 .timeline__heading {
   font-size: 60px;
-  color: #164167;
+  color: #df2e73;
   font-weight: 700;
   line-height: 120%;
   margin-bottom: 20px; }
 
 .timeline__img {
-  width: 300px; }
+  width: 400px; }
 
 .location__content {
   padding: 80px 0; }
@@ -706,7 +719,7 @@ button:focus {
   padding: 30px 0;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background-color: #164167;
-  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 60px 4px rgba(22, 65, 103, 0.8);
   margin-bottom: 80px; }
   .contact .text {
     color: #fff; }
