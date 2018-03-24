@@ -61,7 +61,7 @@ $col-width: 100% / $columns;
 }
 @media all and (min-width: 992px) {
 	.container {
-		max-width: 960px;
+		max-width: 1180px;
 	}
 	@for $i from $columns through 1 {
 		.col-lg-#{ $i } {

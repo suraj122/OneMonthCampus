@@ -29,7 +29,7 @@
 	@extend %flex-between;
 }
 .logo {
-	font-size: 40px;
+	font-size: 36px;
 	color: #fff;
 	font-weight: 700;
 	transition: all 0.3s ease-in-out;
@@ -61,7 +61,14 @@
 }
 .active {
 	border-bottom: 3px solid $accent-color;
+	&:hover {
+		opacity: 1;
+	}
 }
+
+// =========================
+// Hero Section
+// =========================
 
 .hero {
 	width: 100%;
@@ -109,10 +116,18 @@
 	p {
 		font-size: 24px;
 		color: $accent-color;
-		margin: 0 40px;
-
+		margin-left: 20px;
+		
 	}
 }
+.event__info {
+	@extend %flex-between;
+	margin: 0 30px;
+}
+
+// =========================
+// First block
+// =========================
 .first-block {
 	background: #fff;
 	p {
@@ -195,6 +210,10 @@
   margin: 10px 0;
 }
 
+// =========================
+// First block
+// =========================
+
 .faqs {
 	padding-bottom: 80px;
 }
@@ -216,6 +235,10 @@
   	font-size: 20px;
   }
 }
+
+// =========================
+// What to expect
+// =========================
 .hero__nav-menu {
 	@extend %flex-between;
 	justify-content: center;
@@ -247,6 +270,10 @@
 .timeline__img {
 	width: 400px;
 }
+
+// =========================
+// Location
+// =========================
 .location__content {
 	padding: 80px 0;
 }
@@ -263,6 +290,11 @@
 .contact__map {
 	padding: 0 20px;
 }
+
+// =========================
+// Activity
+// =========================
+
 .activity {
 	padding: 40px 0 80px 0;
 }
@@ -310,9 +342,18 @@
 		color: #fff;
 	}
 }
+// =========================
+// Apply
+// =========================
+
 .apply {
 	padding: 80px 0;
 }
+
+// =========================
+// Footer
+// =========================
+
 .footer {
 	position: relative;
 	.footer__content {
@@ -354,3 +395,8 @@
 		}
 	}
 }
+
+// =========================
+// Responsive
+// =========================
+@import "responsive";
