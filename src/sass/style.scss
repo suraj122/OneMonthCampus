@@ -110,8 +110,9 @@
 	font-size: 24px;
 }
 .event {
-	@extend %flex-between;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 	padding: 30px 0;
 	p {
 		font-size: 24px;
@@ -130,15 +131,6 @@
 // =========================
 .first-block {
 	background: #fff;
-	p {
-		font-size: 24px;
-    font-weight: 700;
-    line-height: 130%;
-    color: $font-color;
-    span {
-    	color: $accent-color;
-    }
-	}
 }
 .bg {
 	-webkit-background-size: cover;
@@ -210,8 +202,12 @@
   margin: 10px 0;
 }
 
+#skill {
+	color: $accent-color;
+}
+
 // =========================
-// First block
+// Faqs
 // =========================
 
 .faqs {
@@ -240,8 +236,9 @@
 // What to expect
 // =========================
 .hero__nav-menu {
-	@extend %flex-between;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 20px;
 	li {
 		margin: 0 20px;
@@ -303,8 +300,9 @@
 }
 .activity__list {
 	margin-top: 30px;
-	@extend %flex-between;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
 }
 .activity__item {
@@ -359,16 +357,17 @@
 	.footer__content {
 		position: absolute;
 		width: 100%;
-		bottom: 0;
+		bottom: 30px;
 		left: 50%;
-		-webkit-transform: translate(-50%, -50%);
-		   -moz-transform: translate(-50%, -50%);
-		    -ms-transform: translate(-50%, -50%);
-		     -o-transform: translate(-50%, -50%);
-		        transform: translate(-50%, -50%);
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
 		.navigation-bar {
-			@extend %flex-between;
+			display: flex;
 			justify-content: center;
+			align-items: center;
 		}
 		.logo {
 			color: #fff;
@@ -380,12 +379,14 @@
 		.menu__item {
 			color: #fff;
 			font-size: 16px;
+			padding-bottom: 0;
 		}
 	}
 }
 .social-share {
-	@extend %flex-between;
+	display: flex;
 	justify-content: center;
+	align-items: center;
 	margin-top: 30px;
 	a {
 		padding: 0 20px;
