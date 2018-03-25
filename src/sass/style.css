@@ -650,12 +650,6 @@ button:focus {
 .second-block {
   padding-bottom: 60px; }
 
-.second-block__content p {
-  font-size: 17px;
-  font-weight: 400;
-  line-height: 155%;
-  color: #6b6b6b; }
-
 .block {
   padding: 0 40px; }
 
@@ -862,8 +856,8 @@ button:focus {
     background: #164167; }
 
   .menu-icon {
-    width: 80px;
-    height: 80px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -872,11 +866,11 @@ button:focus {
     cursor: pointer; }
 
   .hamburger-icon {
-    width: 36px;
-    height: 4px;
-    border-radius: 2px;
+    width: 30px;
+    height: 3px;
+    border-radius: 3px;
     background: #fff;
-    margin: 4px 0; }
+    margin: 3px 0; }
 
   #toggle:checked ~ .menu-icon {
     position: relative;
@@ -937,8 +931,19 @@ button:focus {
     .social-share a img {
       width: 20px; } }
 @media all and (max-width: 768px) {
+  .hero__heading {
+    font-size: 36px; }
+
   .mountains {
     display: none; }
+
+  .event {
+    align-items: flex-start;
+    flex-direction: column; }
+    .event p {
+      font-size: 18px; }
+    .event .event__info {
+      margin-top: 20px; }
 
   .first-block__content {
     flex-direction: column;
@@ -960,15 +965,52 @@ button:focus {
   .social-share a img {
     width: 16px; } }
 @media all and (max-width: 576px) {
+  .logo {
+    font-size: 24px; }
+
   .mountains {
     display: none; }
 
-  .footer .footer__content .menu {
-    margin-left: 0; }
-  .footer .footer__content .menu__item {
-    font-size: 12px; }
+  .menu-icon {
+    width: 50px;
+    height: 50px; }
 
-  .social-share a img {
-    width: 14px; } }
+  .hamburger-icon {
+    width: 24px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    margin: 3px 0; }
+
+  .hero__heading {
+    font-size: 30px;
+    line-height: 140%; }
+
+  .hero-home__text {
+    font-size: 16px; }
+
+  .heading {
+    font-size: 18px; }
+
+  .heading2 {
+    font-size: 14px; }
+
+  .text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 155%;
+    margin: 10px 0; }
+
+  .footer .footer__content {
+    bottom: 10px; }
+    .footer .footer__content .menu {
+      margin-left: 0; }
+    .footer .footer__content .menu__item {
+      font-size: 10px; }
+
+  .social-share a {
+    padding: 0 10px; }
+    .social-share a img {
+      width: 14px; } }
 
 /*# sourceMappingURL=style.css.map */
