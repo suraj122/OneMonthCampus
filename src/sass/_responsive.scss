@@ -151,6 +151,29 @@
 	.rocket{
 		order: 2;
 	}
+	.what {
+		min-height: 300px;
+	}
+	.hero__nav-menu {
+		margin-top: 30px;
+		li {
+			margin: 0 8px;
+			a {
+				padding: 8px 14px;
+				border: 2px solid $font-color-hero;
+				font-size: 14px;
+			}
+		}
+	}
+	.timeline {
+		padding: 40px 0;
+	}
+	.timeline__heading {
+		font-size: 48px;
+	}
+	.timeline__img {
+		width: 300px;
+	}
 	.footer {
 		.footer__content {
 			.navigation-bar {
@@ -211,6 +234,25 @@
 	  font-weight: 400;
 	  line-height: 155%;
 	  margin: 10px 0;
+	}
+	.hero__nav-menu {
+		margin-top: 30px;
+		li {
+			margin: 0 8px;
+			a {
+				padding: 0px 0px;
+				border: 0px solid $font-color-hero;
+				font-size: 12px;
+				font-weight: 700;
+				&:hover {
+					background: none;
+					color: $font-color-hero;
+				}
+			}
+		}
+	}
+	.timeline__heading {
+		font-size: 36px;
 	}
 	.footer {
 		.footer__content {
