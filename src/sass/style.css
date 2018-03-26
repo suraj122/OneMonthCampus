@@ -784,6 +784,9 @@ button:focus {
 .apply {
   padding: 80px 0; }
 
+.footer-bg-small {
+  display: none; }
+
 .footer {
   position: relative; }
   .footer .footer__content {
@@ -960,6 +963,9 @@ button:focus {
   .rocket {
     order: 2; }
 
+  .hero-wrapper {
+    min-height: 300px; }
+
   .what {
     min-height: 300px; }
 
@@ -1048,12 +1054,16 @@ button:focus {
   .timeline__heading {
     font-size: 36px; }
 
-  .footer .footer__content {
-    bottom: 10px; }
-    .footer .footer__content .menu {
-      margin-left: 0; }
-    .footer .footer__content .menu__item {
-      font-size: 10px; }
+  .footer-bg-large {
+    display: none; }
+
+  .footer-bg-small {
+    display: block; }
+
+  .footer .footer__content .menu {
+    margin-left: 0; }
+  .footer .footer__content .menu__item {
+    font-size: 10px; }
 
   .social-share a {
     padding: 0 10px; }
