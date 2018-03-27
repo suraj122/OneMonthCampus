@@ -14,16 +14,22 @@
 				<header id="header" class="header">
 					<div class="container navigation-bar">
 						<div class="logo-box">
-							<h1><a class="text-center home-logo logo" href="index.html">OneMonthCampus</a></h1>
+							<h1><a class="text-center home-logo logo" href="/">OneMonthCampus</a></h1>
 						</div>
 						<nav class="nav">
-							<ul class="menu">
-								<li><a href="index.html" class="menu__item home-menu__item active" title="">Home</a></li>
-								<li><a href="timeline.html" class="menu__item home-menu__item" title="">What to expect</a></li>
-								<li><a href="activity.html" class="menu__item home-menu__item" title="">Activities</a></li>
-								<li><a href="location.html" class="menu__item home-menu__item" title="">Locations</a></li>
-								<li><a href="apply.html" class="menu__item home-menu__item" title="">Apply</a></li>
-								<li><a href="faqs.html" class="menu__item home-menu__item" title="">Faqs</a></li>
+							<input type="checkbox" id="toggle">
+							<label for="toggle" class="menu-icon home-menu-icon">
+								<div class="hamburger-icon icon-1"></div>
+								<div class="hamburger-icon icon-2"></div>
+								<div class="hamburger-icon icon-3"></div>
+							</label>
+							<ul class="menu nav__menu">
+								<li><a href="/" class="menu__item home-menu__item active" title="">Home</a></li>
+								<li><a href="what" class="menu__item home-menu__item" title="">What to expect</a></li>
+								<li><a href="activity" class="menu__item home-menu__item" title="">Activities</a></li>
+								<li><a href="location" class="menu__item home-menu__item" title="">Location</a></li>
+								<li><a href="apply" class="menu__item home-menu__item" title="">Apply</a></li>
+								<li><a href="faq" class="menu__item home-menu__item" title="">Faqs</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -31,14 +37,20 @@
 				<div class="home-hero">
 					<div class="container hero-main-text">
 						<h1 class="text-center hero-home__heading hero__heading">A month of learning and creating, with awesome people, in hills</h1>
-						<h2 class="text-center hero-home__text hero__text"><strong>OneMonthCampus </strong> is an open learning and coworking environment, in awe inspiring Himalayas, where you can spend a month exploring, learning and working on creative skills with a supportive community.</h2>
+						<h2 class="text-center hero-home__text hero__text"><strong>OneMonthCampus </strong> is an open learning and coworking environment, in awe-inspiring Himalayas, where you can spend a month exploring, learning and working on various creative skills with a supportive community.</h2>
 						<div class="event">
-							<p class="event__date event__location">Ghoomakad, Dharamshala, HP</p>
-							<p class="event__date event__location">17th April - 17th May</p>
+							<div class="event__info text-center">
+								<img src="./assets/placeholder.png">
+								<p class="event__date event__location">Ghoomakad, Dharamshala, HP</p>
+							</div>
+							<div class="event__info text-center">
+								<img src="./assets/calendar.png">
+								<p class="event__date event__location">17th April - 17th May</p>
+							</div>
 						</div>
 					</div>
 					<div>
-						<img src="./assets/mountains.svg" class="img-responsive" />
+						<img src="./assets/mountains.svg" class="img-responsive mountains" alt="Live in mountains and have a productive month."/>
 					</div>
 				</div>
 			</div>
@@ -49,28 +61,28 @@
 				</div> -->
 				<div class="container">
 					<div class="first-block__content">
-						<div class="col-md-6 padding">
+						<div class="col-md-6 padding rocket">
 							<img class="img-responsive" src="./assets/rocket.png">
 						</div>
 						<div class="col-md-6 padding">
-							<h2 class="heading">Give yourself the freedom to explore and do things that you have always wanted to do.</h2>
-							<p>You can dedicate a month to learn <span id="skill">Programming</span></p>
+							<h2 class="heading">Freedom to explore and do things that you have always wanted to do.</h2>
+							<h3>What if you could dedicate a month to learn <span id="skill">Programming</span></h3>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
 
-			<div class="first-block">
+			<div class="first-block explore">
 				<!-- <div class="custom">
 					<img class="amplitude-green" src="./assets/amplitude-green-top.png">
 				</div> -->
 				<div class="container">
 					<div class="first-block__content">
 						<div class="col-md-6 padding">
-							<h2 class="heading">Explore, Build relationships</h2>
+							<h2 class="heading">Explore, Make friends</h2>
 							<h3 class="heading2">Friendships have a stronger influence on your life than any college class could.</h3>
-							<p>Opportunity for participants to meet new people, explore various interests, learn skills, have fun and hopefully build life-long friendships.</p>
+							<p class="text">Opportunity for participants to meet new people, explore various interests, learn a skill, have fun and hopefully build life-long friendships.</p>
 						</div>
 						<div class="col-md-6 padding">
 							<img class="img-responsive" src="./assets/things1.png">
@@ -87,9 +99,9 @@
 				<div class="container">
 					<div class="second-block__content">
 						<div class="col-md-12 block">
-							<h2 class="heading">Will it be fun?</h2>
-							<h3 class="heading2">Activities are at the heart of an active lifestyle.</h3>
-							<p>Expect fun-filled days with Bonfires, SkillShare sessions, hikes, movie screenings, team games, Badminton and Table tennis tournaments and more!</p>
+							<h2 class="heading">Fun experience</h2>
+							<h3 class="heading2">The quality of life is determined by its activities. - Aristotle</h3>
+							<p class="text">Expect fun-filled days with bonfires, skill-share sessions, hikes, movie screenings, team games, badminton & table tennis tournaments and much more!</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -100,31 +112,32 @@
 			</div>
 
 			<div class="footer">
-				<img class="footer-bg img-responsive" src="./assets/footer-bg.svg">
-					<div class="footer__content">
-						<div class="container navigation-bar">
-							<div class="logo-box">
-								<h1><a class="text-center logo" href="#">OneMonthCampus</a></h1>
-							</div>
-							<nav class="nav">
-								<ul class="menu">
-									<li><a href="index.html" class="menu__item" title="">Home</a></li>
-									<li><a href="timeline.html" class="menu__item" title="">What to expect</a></li>
-									<li><a href="location.html" class="menu__item" title="">Locations</a></li>
-									<li><a href="apply.html" class="menu__item" title="">apply</a></li>
-									<li><a href=faqs.html" class="menu__item" title="">faqs</a></li>
-								</ul>
-							</nav>
+				<img class="footer-bg footer-bg-large img-responsive" src="./assets/footer-bg.svg">
+				<img class="footer-bg footer-bg-small img-responsive" src="./assets/footer-bg-small.svg">
+				<div class="footer__content">
+					<div class="container navigation-bar">
+						<div class="logo-box">
+							<h1><a class="text-center logo" href="/">OneMonthCampus</a></h1>
 						</div>
-						<div class="social-share">
-							<a href="" title="">
-								<img src="./assets/facebook-logo.png">
-							</a>
-							<a href="" title="">
-								<img src="./assets/instagram-logo.png">
-							</a>
-						</div>
+						<nav class="nav">
+							<ul class="menu">
+								<li><a href="/" class="menu__item" title="">Home</a></li>
+								<li><a href="what" class="menu__item" title="">What to expect</a></li>
+								<li><a href="location" class="menu__item" title="">Location</a></li>
+								<li><a href="apply" class="menu__item" title="">apply</a></li>
+								<li><a href="faq" class="menu__item" title="">faqs</a></li>
+							</ul>
+						</nav>
 					</div>
+					<div class="social-share">
+						<a href="" title="">
+							<img src="./assets/facebook-logo.png">
+						</a>
+						<a href="" title="">
+							<img src="./assets/instagram-logo.png">
+						</a>
+					</div>
+				</div>
 			</div>
 		</main>
 		<script type="text/javascript" charset="utf-8" async defer>

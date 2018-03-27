@@ -30,6 +30,9 @@ time, mark, audio, video {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+          &.in-transition {
+    transition: transform 900ms ease;
+  }
 }
 h1 {
   font-size: 2em;
