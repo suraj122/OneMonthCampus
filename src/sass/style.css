@@ -719,6 +719,18 @@ button:focus {
 .timeline__img {
   width: 400px; }
 
+.courses {
+  padding: 30px 0; }
+  .courses h3 {
+    color: rgba(0, 0, 0, 0.8); }
+  .courses h4 {
+    margin-top: 30px;
+    color: #164167; }
+
+.course-list__item {
+  line-height: 150%;
+  list-style: disc; }
+
 .location__content {
   padding: 80px 0; }
 
@@ -928,7 +940,7 @@ button:focus {
   .heading {
     font-size: 22px; }
 
-  .heading2 {
+  .heading2, .question {
     font-size: 16px; }
 
   .footer .footer__content .logo {
@@ -1027,10 +1039,10 @@ button:focus {
   .heading {
     font-size: 18px; }
 
-  .heading2 {
+  .heading2, .question {
     font-size: 14px; }
 
-  .text {
+  .text, .answer {
     font-size: 14px;
     font-weight: 400;
     line-height: 155%;

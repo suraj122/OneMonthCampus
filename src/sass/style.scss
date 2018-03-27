@@ -267,6 +267,20 @@
 .timeline__img {
 	width: 400px;
 }
+.courses {
+	padding: 30px 0;
+	h3 {
+		color: rgba(0, 0, 0, 0.8);
+	}
+	h4 {
+		margin-top: 30px;
+		color: $font-color-hero;
+	}
+}
+.course-list__item {
+	line-height: 150%;
+	list-style: disc;
+}
 
 // =========================
 // Location
