@@ -137,6 +137,9 @@ button:focus {
   .btn:hover {
     background: #468847; }
 
+.pad {
+  padding: 40px 0; }
+
 .navigation-bar, .menu, .event__info, .first-block__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,7 +645,7 @@ button:focus {
   margin-bottom: 20px; }
 
 .first-block__content {
-  padding: 0 0; }
+  padding: 50px 0; }
 
 .primary {
   padding: 100px; }
